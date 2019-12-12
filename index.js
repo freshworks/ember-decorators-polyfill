@@ -12,7 +12,8 @@ module.exports = {
     let emberDataVersion = checker.for('ember-data');
 
     this._shouldPolyfillEmber = emberVersion.lt('3.10.0-alpha.0')
-    this._shouldPolyfillData = emberDataVersion.exists() && emberDataVersion.lt('3.13.0-alpha.0');
+    //this._shouldPolyfillData = emberDataVersion.exists() && emberDataVersion.lt('3.13.0-alpha.0');
+    this._shouldPolyfillData = false;
   },
 
   included() {
